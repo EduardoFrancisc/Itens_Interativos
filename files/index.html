@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Itens Interativos</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <main>
+        <!------------Radio Button-->
         <fieldset class="m-contato">
             <legend>Meio de Contato:</legend>
             <div class="radioDefault">
@@ -23,8 +27,38 @@
               <span>Todos os Meios</span>
             </div>
           </fieldset>
-      
-
+          <!------------Select-->
+          <div class="icon-select">
+            <div class="dropText">
+              <span class="selctorText">Selecione</span>
+              <div id="myDropdown" class="dropdown-content">
+                <ul>
+                  <li class="select-text">Bovina</li>
+                  <li class="select-text">Suína</li>
+                  <li class="select-text">Aves</li>
+                  <li class="select-text">Frutos do Mar</li>
+                  <li class="select-text">Outros</li>
+                </ul>
+              </div>
+            </div>
+            <i class="fa fa-chevron-down" id="iconSeletor"></i>
+          </div>
+          <!------------Checkbox-->
+          <fieldset class="m-contato">
+            <legend>Meio de Contato:</legend>
+            <div class="checkDefault">
+              <div class="default"></div>
+              <span class="checkbox_label">E-mail</span>
+            </div>
+            <div class="checkDefault">
+              <div class="default"></div>
+              <span class="checkbox_label">SMS</span>
+            </div>
+            <div class="checkDefault">
+              <div class="default"></div>
+              <span class="checkbox_label">Todos os Meios</span>
+            </div>
+          </fieldset>
     </main>
     <script src="script.js"></script>
 </body>

@@ -2,13 +2,26 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    height: auto;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    width: 700px;
+    margin: 100px auto;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 15px;
 }
 
 /*-------Radio Button------*/
 fieldset {
     border: none;
-    width: 200px;
-    margin: auto;
+    width: 150px;
 }
 
 .radioDefault div {
@@ -38,4 +51,115 @@ margin-bottom: 3px;
 background-position: center;
 background-repeat: no-repeat;
 }
+
+/*-------Select/Dropdown------*/
+.dropdown-content {
+    display: none;
+  }
+
+.dropText {
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+    width: 150px;
+    border-radius: 15px;
+}
   
+.dropdownActive {
+    text-align: center;
+    border: 1px solid black;
+    position: absolute;
+    display: block;
+}
+  
+.dropdown-content {
+    margin-top: 2px;
+    border-radius: 15px;
+    width: 150px;
+    text-align: center;
+    background-color: white;
+    list-style-type: none;
+}
+  
+#myDropdown ul {
+    list-style-type: none;
+    padding: 0;
+}
+  
+.dropdown-content li {
+    cursor: pointer;
+    border: none;
+}
+  
+.dropdown-content li:hover {
+    background-color: rgb(148, 148, 148);
+}
+  
+.icon-select {
+    width: 150px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+  
+#iconSeletor {
+    margin-right: 20px;
+    cursor: pointer;
+    font-size: 10px;
+    transition: all .5s;
+}
+  
+.animacao {
+    cursor: pointer;
+    font-size: 10px;
+    transition: all .5s;
+    transform: rotate(3.142rad);
+}
+
+/*-------Checkbox------*/
+.checkDefault div {
+    background-color: white;
+    content: '';
+    width: 24px;
+    height: 24px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-bottom: 3px;
+  }
+  
+  .iconActive {
+    content: '';
+    width: 24px;
+    height: 24px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-bottom: 3px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='18px' viewBox='0 0 448 512'%3E%3C!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --%3E%3Cpath d='M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+
+  .intermed {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='18px' viewBox='0 0 448 512'%3E%3C!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --%3E%3Cpath d='M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    content: '';
+    width: 24px;
+    height: 24px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-bottom: 3px;
+  }
